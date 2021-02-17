@@ -1,13 +1,7 @@
-#!/usr/bin/python3
-####################
-####IMPORT MODUL####
-####################
-#import PIL.Image
-#import PIL.ImageTk
+#!/usr/bin/env python3
 from tkinter import *
 from math import sqrt
-####################
-###FUNGSI DAN CLASS####
+
 class tentang():
 	def __init__(self, event=None):
 				
@@ -52,10 +46,6 @@ def th(event):
 	TH = 'Titik Henti ada pada\n{:.2f} km dari {}'.format(TH, kotab)
 	hasil.set(TH)
 
-
-####################
-###JENDELA UTAMA####
-####################
 root = Tk()
 root.title('Titik Henti')
 root.resizable(0,0)
@@ -69,13 +59,6 @@ Program ini dibuat dengan python3 menggunakan beberapa
 modul diantaranya adalah:
 1. modul Tkinter untuk gui
 2. modul math untuk menghitung akar kuadrat'''
-
-#Masukan Gambar
-'''
-gambar = PIL.Image.open('home2.png')
-gambar = gambar.resize((50, 50), PIL.Image.ANTIALIAS)
-foto = PIL.ImageTk.PhotoImage(gambar)
-'''
 
 #Frame
 jendela = Frame(root, bd=3, relief=SUNKEN)
